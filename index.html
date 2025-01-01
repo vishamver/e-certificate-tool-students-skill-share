@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Certificate Maker Tool 2024 - Student Skill Share</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body id="body">
+    <div id="cform">
+
+
+        <div id="chform">
+            <h1 style="text-align: center; margin-top: 20px;">E-Certificate Creator Form</h1>
+            <br>
+            <p style="text-align: left; font-size: large; font-weight: bolder; width: 100%; margin-left: 20px;">Enter
+                Your Name*</p>
+            <input type="text" id="fname" name="username" required="" placeholder="Enter Your Full Name"/>
+            <p style="text-align: left; font-size: large; font-weight: bolder; width: 100%; margin-left: 20px;">Enter Your Completed Course Name*</p>
+            <input type="text" id="fdetails" name="userdetails" placeholder="Enter Your Course Name" />
+            <p style="text-align: left; font-size: large; font-weight: bolder; width: 100%; margin-left: 20px;">
+                Enter Your Course Completion Date*
+            </p>
+            <input type="date" id="forganisername" name="organisername" required />
+            
+            <br>
+            <br>
+            <button id="bcertificate" onclick="check()">Generate E-Certificate</button>
+           
+            <button  id="downloaddata" onclick="dcheck()">Download E-Certificate</button>
+        </div>
+
+    </div>
+
+
+    <div id="main">
+        <div id="child1">
+            <img src="https://raw.githubusercontent.com/vishamver/e-certificate-tool/cf2d3f49a4ec8b819a3150c3c06852f79037f639/Students%20Skill%20Share%20Logo.jpg" 
+         alt="Favicon" class="img1">
+           <h1 id="img2">Students Skill Share</h1>
+            <div class="body">
+                Certificate
+            </div>
+            <div class="body2">
+                Of Course Completion
+            </div>
+            <div class="body2">
+                This Certificate Is Proudly Awarded To
+            </div>
+            <h3 id="name" align="center"></h3>
+            <hr size="bolder" />
+            <p align="center" style="font-weight: bold; font-size: large;"> Course Name  </p>
+            <h4 class="details" style="text-transform: capitalize; text-align: center;"></h4>
+            <p align="center" style="font-size: larger; font-weight: bold;">Acknowledging Your Efforts: Keep Learning and Growing!
+            <h5 class="organisername" style="text-align: center; font-weight: bolder; text-transform: capitalize;">
+            </h5>
+            <div class="body">
+                Course Completion Date
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
